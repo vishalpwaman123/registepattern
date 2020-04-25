@@ -32,7 +32,7 @@ fi
 function Email(){
 
 read -p "Enter Email Id :" Em;
-patE="^abc\.[a-zA-Z0-9.-_]{3,}@bl\.co\.[a-z]+$"
+patE="^[a-zA-Z]+[-.+]?[0-9]*@[a-z0-9]+(\.|(com|net|au))+$"
 
 if [[ $Em =~ $patE ]];
 then
