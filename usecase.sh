@@ -62,7 +62,7 @@ function Pass(){
 
 read -p "Enter Password :" pa;
 
-Ps1="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
+Ps1="^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$"
 
 if [[ $pa =~ $Ps1 ]];
 then
