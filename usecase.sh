@@ -43,8 +43,24 @@ fi
 
 }
 
+function Phone(){
+
+read -p "Enter mobile Number :" Ph;
+
+Mob="^[0-9]{2,3}\s[0-9]{10}$"
+
+if [[ $Ph =~ $Mob ]]
+then
+	echo "Valid";
+else
+	echo "Not Valid";
+fi
+
+}
+
 
 
 First
 Last
 Email
+Phone
