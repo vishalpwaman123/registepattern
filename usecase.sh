@@ -29,6 +29,22 @@ fi
 }
 
 
+function Email(){
+
+read -p "Enter Email Id :" Em;
+patE="^abc\.[a-zA-Z0-9.-_]{3,}@bl\.co\.[a-z]+$"
+
+if [[ $Em =~ $patE ]];
+then
+	echo "Valid";
+else
+	echo "Not Valid";
+fi
+
+}
+
+
 
 First
 Last
+Email
