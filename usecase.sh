@@ -58,9 +58,25 @@ fi
 
 }
 
+function Pass(){
+
+read -p "Enter Password :" pa;
+
+Ps1="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
+
+if [[ $pa =~ $Ps1 ]];
+then
+	echo "valid";
+else
+	echo "Not Valid";
+fi 
+
+}
+
 
 
 First
 Last
 Email
 Phone
+Pass
